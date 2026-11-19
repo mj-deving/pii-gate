@@ -1,0 +1,40 @@
+[project]
+name = "pii-gate"
+version = "0.1.0"
+description = "Pseudonymize German text before it reaches a hosted LLM, restore the answer, and measure what still leaks per entity type."
+license = "Apache-2.0"
+requires-python = ">=3.13"
+dependencies = [
+    "httpx>=0.28",
+    "pydantic>=2.10",
+]
+
+[project.scripts]
+pii-gate = "pii_gate.gate:main"
+make-data = "pii_gate.data:main"
+fill-heldout = "pii_gate.data:fill_main"
+evaluate = "pii_gate.evaluate:main"
+
+[build-system]
+requires = ["uv_build>=0.12.0,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pyright>=1.1.390",
+    "pytest>=8.3",
+    "ruff>=0.8",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pyright]
+include = ["src", "tests"]
+typeCheckingMode = "standard"

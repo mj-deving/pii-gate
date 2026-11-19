@@ -1,0 +1,347 @@
+{
+ "set": "golden",
+ "texts": 56,
+ "k": 3,
+ "regex": {
+  "labels": 232,
+  "leaked": 24,
+  "leak_rate": 0.1034,
+  "leak_ci95": [
+   0.0705,
+   0.1493
+  ],
+  "per_type": {
+   "PERSON": {
+    "n": 72,
+    "leaked": 24,
+    "leak_ci95": [
+     0.2353,
+     0.4482
+    ]
+   },
+   "ADDRESS": {
+    "n": 56,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.0642
+    ]
+   },
+   "EMAIL": {
+    "n": 16,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.1936
+    ]
+   },
+   "PHONE": {
+    "n": 16,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.1936
+    ]
+   },
+   "IBAN": {
+    "n": 40,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.0876
+    ]
+   },
+   "TAX_ID": {
+    "n": 16,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.1936
+    ]
+   },
+   "BIRTHDATE": {
+    "n": 16,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.1936
+    ]
+   }
+  },
+  "over_masked_spans": 16,
+  "leaks": [
+   {
+    "case": "g01",
+    "type": "PERSON"
+   },
+   {
+    "case": "g04",
+    "type": "PERSON"
+   },
+   {
+    "case": "g05",
+    "type": "PERSON"
+   },
+   {
+    "case": "g08",
+    "type": "PERSON"
+   },
+   {
+    "case": "g11",
+    "type": "PERSON"
+   },
+   {
+    "case": "g12",
+    "type": "PERSON"
+   },
+   {
+    "case": "g15",
+    "type": "PERSON"
+   },
+   {
+    "case": "g18",
+    "type": "PERSON"
+   },
+   {
+    "case": "g19",
+    "type": "PERSON"
+   },
+   {
+    "case": "g22",
+    "type": "PERSON"
+   },
+   {
+    "case": "g25",
+    "type": "PERSON"
+   },
+   {
+    "case": "g26",
+    "type": "PERSON"
+   },
+   {
+    "case": "g29",
+    "type": "PERSON"
+   },
+   {
+    "case": "g32",
+    "type": "PERSON"
+   },
+   {
+    "case": "g33",
+    "type": "PERSON"
+   },
+   {
+    "case": "g36",
+    "type": "PERSON"
+   },
+   {
+    "case": "g39",
+    "type": "PERSON"
+   },
+   {
+    "case": "g40",
+    "type": "PERSON"
+   },
+   {
+    "case": "g43",
+    "type": "PERSON"
+   },
+   {
+    "case": "g46",
+    "type": "PERSON"
+   },
+   {
+    "case": "g47",
+    "type": "PERSON"
+   },
+   {
+    "case": "g50",
+    "type": "PERSON"
+   },
+   {
+    "case": "g53",
+    "type": "PERSON"
+   },
+   {
+    "case": "g54",
+    "type": "PERSON"
+   }
+  ],
+  "k": 1,
+  "seconds_per_text": 0.0,
+  "model": null
+ },
+ "llm": {
+  "labels": 232,
+  "leaked": 7,
+  "leak_rate": 0.0302,
+  "leak_ci95": [
+   0.0147,
+   0.061
+  ],
+  "per_type": {
+   "PERSON": {
+    "n": 72,
+    "leaked": 5,
+    "leak_ci95": [
+     0.03,
+     0.1525
+    ]
+   },
+   "ADDRESS": {
+    "n": 56,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.0642
+    ]
+   },
+   "EMAIL": {
+    "n": 16,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.1936
+    ]
+   },
+   "PHONE": {
+    "n": 16,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.1936
+    ]
+   },
+   "IBAN": {
+    "n": 40,
+    "leaked": 2,
+    "leak_ci95": [
+     0.0138,
+     0.165
+    ]
+   },
+   "TAX_ID": {
+    "n": 16,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.1936
+    ]
+   },
+   "BIRTHDATE": {
+    "n": 16,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.1936
+    ]
+   }
+  },
+  "over_masked_spans": 61,
+  "leaks": [
+   {
+    "case": "g02",
+    "type": "PERSON"
+   },
+   {
+    "case": "g16",
+    "type": "PERSON"
+   },
+   {
+    "case": "g23",
+    "type": "PERSON"
+   },
+   {
+    "case": "g47",
+    "type": "IBAN"
+   },
+   {
+    "case": "g51",
+    "type": "PERSON"
+   },
+   {
+    "case": "g52",
+    "type": "PERSON"
+   },
+   {
+    "case": "g52",
+    "type": "IBAN"
+   }
+  ],
+  "k": 3,
+  "seconds_per_text": 3.74,
+  "model": "qwen3:8b"
+ },
+ "both": {
+  "labels": 232,
+  "leaked": 0,
+  "leak_rate": 0.0,
+  "leak_ci95": [
+   0.0,
+   0.0163
+  ],
+  "per_type": {
+   "PERSON": {
+    "n": 72,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.0507
+    ]
+   },
+   "ADDRESS": {
+    "n": 56,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.0642
+    ]
+   },
+   "EMAIL": {
+    "n": 16,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.1936
+    ]
+   },
+   "PHONE": {
+    "n": 16,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.1936
+    ]
+   },
+   "IBAN": {
+    "n": 40,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.0876
+    ]
+   },
+   "TAX_ID": {
+    "n": 16,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.1936
+    ]
+   },
+   "BIRTHDATE": {
+    "n": 16,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.1936
+    ]
+   }
+  },
+  "over_masked_spans": 61,
+  "leaks": [],
+  "k": 3,
+  "seconds_per_text": 4.32,
+  "model": "qwen3:8b"
+ }
+}

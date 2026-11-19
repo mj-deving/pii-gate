@@ -1,0 +1,323 @@
+{
+ "set": "heldout",
+ "texts": 20,
+ "k": 3,
+ "regex": {
+  "labels": 116,
+  "leaked": 19,
+  "leak_rate": 0.1638,
+  "leak_ci95": [
+   0.1074,
+   0.2417
+  ],
+  "per_type": {
+   "PERSON": {
+    "n": 40,
+    "leaked": 18,
+    "leak_ci95": [
+     0.3071,
+     0.6017
+    ]
+   },
+   "ADDRESS": {
+    "n": 28,
+    "leaked": 1,
+    "leak_ci95": [
+     0.0063,
+     0.1771
+    ]
+   },
+   "EMAIL": {
+    "n": 9,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.2992
+    ]
+   },
+   "PHONE": {
+    "n": 13,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.2281
+    ]
+   },
+   "IBAN": {
+    "n": 8,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.3244
+    ]
+   },
+   "TAX_ID": {
+    "n": 9,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.2992
+    ]
+   },
+   "BIRTHDATE": {
+    "n": 9,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.2992
+    ]
+   }
+  },
+  "over_masked_spans": 6,
+  "leaks": [
+   {
+    "case": "h03",
+    "type": "PERSON"
+   },
+   {
+    "case": "h03",
+    "type": "PERSON"
+   },
+   {
+    "case": "h04",
+    "type": "PERSON"
+   },
+   {
+    "case": "h06",
+    "type": "ADDRESS"
+   },
+   {
+    "case": "h07",
+    "type": "PERSON"
+   },
+   {
+    "case": "h07",
+    "type": "PERSON"
+   },
+   {
+    "case": "h07",
+    "type": "PERSON"
+   },
+   {
+    "case": "h11",
+    "type": "PERSON"
+   },
+   {
+    "case": "h11",
+    "type": "PERSON"
+   },
+   {
+    "case": "h11",
+    "type": "PERSON"
+   },
+   {
+    "case": "h12",
+    "type": "PERSON"
+   },
+   {
+    "case": "h13",
+    "type": "PERSON"
+   },
+   {
+    "case": "h14",
+    "type": "PERSON"
+   },
+   {
+    "case": "h14",
+    "type": "PERSON"
+   },
+   {
+    "case": "h15",
+    "type": "PERSON"
+   },
+   {
+    "case": "h16",
+    "type": "PERSON"
+   },
+   {
+    "case": "h16",
+    "type": "PERSON"
+   },
+   {
+    "case": "h17",
+    "type": "PERSON"
+   },
+   {
+    "case": "h17",
+    "type": "PERSON"
+   }
+  ],
+  "k": 1,
+  "seconds_per_text": 0.0,
+  "model": null
+ },
+ "llm": {
+  "labels": 116,
+  "leaked": 6,
+  "leak_rate": 0.0517,
+  "leak_ci95": [
+   0.0239,
+   0.1083
+  ],
+  "per_type": {
+   "PERSON": {
+    "n": 40,
+    "leaked": 3,
+    "leak_ci95": [
+     0.0258,
+     0.1986
+    ]
+   },
+   "ADDRESS": {
+    "n": 28,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.1206
+    ]
+   },
+   "EMAIL": {
+    "n": 9,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.2992
+    ]
+   },
+   "PHONE": {
+    "n": 13,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.2281
+    ]
+   },
+   "IBAN": {
+    "n": 8,
+    "leaked": 2,
+    "leak_ci95": [
+     0.0715,
+     0.5907
+    ]
+   },
+   "TAX_ID": {
+    "n": 9,
+    "leaked": 1,
+    "leak_ci95": [
+     0.0199,
+     0.435
+    ]
+   },
+   "BIRTHDATE": {
+    "n": 9,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.2992
+    ]
+   }
+  },
+  "over_masked_spans": 9,
+  "leaks": [
+   {
+    "case": "h01",
+    "type": "IBAN"
+   },
+   {
+    "case": "h06",
+    "type": "PERSON"
+   },
+   {
+    "case": "h13",
+    "type": "PERSON"
+   },
+   {
+    "case": "h14",
+    "type": "PERSON"
+   },
+   {
+    "case": "h15",
+    "type": "TAX_ID"
+   },
+   {
+    "case": "h15",
+    "type": "IBAN"
+   }
+  ],
+  "k": 3,
+  "seconds_per_text": 4.55,
+  "model": "qwen3:8b"
+ },
+ "both": {
+  "labels": 116,
+  "leaked": 0,
+  "leak_rate": 0.0,
+  "leak_ci95": [
+   0.0,
+   0.0321
+  ],
+  "per_type": {
+   "PERSON": {
+    "n": 40,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.0876
+    ]
+   },
+   "ADDRESS": {
+    "n": 28,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.1206
+    ]
+   },
+   "EMAIL": {
+    "n": 9,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.2992
+    ]
+   },
+   "PHONE": {
+    "n": 13,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.2281
+    ]
+   },
+   "IBAN": {
+    "n": 8,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.3244
+    ]
+   },
+   "TAX_ID": {
+    "n": 9,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.2992
+    ]
+   },
+   "BIRTHDATE": {
+    "n": 9,
+    "leaked": 0,
+    "leak_ci95": [
+     0.0,
+     0.2992
+    ]
+   }
+  },
+  "over_masked_spans": 11,
+  "leaks": [],
+  "k": 3,
+  "seconds_per_text": 4.38,
+  "model": "qwen3:8b"
+ }
+}
