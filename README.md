@@ -114,6 +114,12 @@ review ran.
 - Known gaps: a phone extension after "/" that starts with 0 is cut off; capitalised nouns right after a name
   ("Frau Berger Bescheid") are over-masked.
 
+
+## Intent
+
+[`ISA.md`](ISA.md) (German) is the spec this repo was built against: what "done" meant, the probe
+that would falsify each criterion, the evidence recorded for it, and the limits left open on purpose.
+
 ## License
 
 Apache-2.0
