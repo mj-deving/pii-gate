@@ -41,7 +41,7 @@ Vor jedem gehosteten Modell steht in einer regulierten Firma dieselbe Frage: Was
 ## Constraints
 
 - Python 3.13 mit uv, Pydantic v2, httpx, pytest, ruff, pyright; keine globale Installation, kein `uvx`.
-- Lokales Modell `qwen3:8b` über Ollama mit JSON-Schema-`format`; jeder Eval-Lauf unter dem gemeinsamen Lock einem gemeinsamen Ollama-Lock.
+- Lokales Modell `qwen3:8b` über Ollama mit JSON-Schema-`format`; jeder Eval-Lauf unter einem gemeinsamen Ollama-Lock.
 - Nur synthetische Personen, Adressen, IBANs (gültige Prüfziffer aus Test-Bankleitzahlen) und Steuer-IDs (gültige Prüfziffer, erfundene Ziffern).
 - ISA.md gitignored; Repo ohne private Bezüge; Push nur nach Go des Maintainers.
 
